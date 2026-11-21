@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SääOhjelma</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Sää</h1>
+    <input id="search-input" type="search" placeholder="Kirjoita kaupungin nimi">
+    <ul id="suggestions" hidden></ul>
+  </header>
+
+  <main>
+    <section class="panel" id="current"></section>
+
+    <section class="panel">
+      <h2>7 päivän sääennuste</h2>
+      <canvas id="chart" height="120"></canvas>
+      <div id="forecast"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Kartta</h2>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer>
+    Lähteet: <a href="https://open-meteo.com/">Open-Meteo</a>, <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: #eef3f7;
+  color: #14212b;
+  font-family: Arial, sans-serif;
+}
+
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+#search-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+#suggestions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+#suggestions li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#suggestions li:hover {
+  background: #ddeeff;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+#forecast {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  overflow-x: auto;
+}
+
+.day {
+  flex: 1;
+  min-width: 80px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#map {
+  height: 300px;
+}
+
+footer {
+  text-align: center;
+  color: #555;
+}
